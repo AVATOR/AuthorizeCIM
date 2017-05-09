@@ -100,7 +100,7 @@ func CreateCustomerBillingProfile(profileID string, creditCard CreditCard, addre
 	response := outgoing
 	var new_paymentID string
 	if success {
-		new_paymentID = outgoing["customerProfileId"].(string)
+		new_paymentID = outgoing["customerPaymentProfileId"].(string)
 	} else {
 		new_paymentID = "0"
 	}
